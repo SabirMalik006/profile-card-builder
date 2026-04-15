@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f4f4f4;
+  padding: 20px;
+  color: #222;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-section,
+.preview-section {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+h1 {
+  margin-bottom: 15px;
+}
+
+fieldset {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+legend {
+  padding: 0 10px;
+  font-weight: bold;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+input[type="text"],
+textarea {
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  outline: none;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  border-color: #4f46e5;
+}
+
+.skills-box {
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.skills-box label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.btn {
+  margin-top: 15px;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background: #4f46e5;
+  color: white;
+  font-size: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #3b35c8;
+}
+
+.error-text {
+  margin-top: 10px;
+  color: red;
+  font-size: 14px;
+}
+
+
+.card {
+  background: #fafafa;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+
+.card > h2 {
+  margin-top: 10px;
+}
+
+
+.avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: #4f46e5;
+  margin: 0 auto;
+}
+
+.card-title {
+  color: blue;
+  font-size: 22px;
+  margin-top: 12px;
+}
+
+#profile-name {
+  color: #111;
+}
+
+.job-text {
+  margin-top: 5px;
+  font-size: 15px;
+  color: #555;
+}
+
+.bio-text {
+  margin-top: 12px;
+  font-size: 14px;
+  color: #333;
+}
+
+
+.card .skills span {
+  display: inline-block;
+  margin: 6px 5px 0;
+  padding: 6px 10px;
+  background: #e5e7eb;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .form-section,
+  .preview-section {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    padding: 40px;
+  }
+
+  .form-section,
+  .preview-section {
+    padding: 30px;
+  }
+
+  .card {
+    padding: 30px;
+  }
+}
