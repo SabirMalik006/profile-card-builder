@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile Card Builder</title>
+  <link rel="stylesheet" href="./styles/main.css" />
+</head>
+<body>
+
+  <main class="container">
+    
+    <section class="form-section">
+      <h1>Profile Card Builder</h1>
+
+      <form id="profile-form">
+        <fieldset>
+          <legend>Fill Your Details</legend>
+
+          <div class="form-group">
+            <label for="full-name">Full Name *</label>
+            <input type="text" id="full-name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="job-title">Job Title *</label>
+            <input type="text" id="job-title" required />
+          </div>
+
+          <div class="form-group">
+            <label for="bio">Bio</label>
+            <textarea id="bio" rows="4" placeholder="Write something about yourself..."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="avatar-color">Avatar Color</label>
+            <input type="color" id="avatar-color" value="#4f46e5" />
+          </div>
+
+          <fieldset class="skills-box">
+            <legend>Skills</legend>
+
+            <label>
+              <input type="checkbox" name="skills" value="HTML" />
+              HTML
+            </label>
+
+            <label>
+              <input type="checkbox" name="skills" value="CSS" />
+              CSS
+            </label>
+
+            <label>
+              <input type="checkbox" name="skills" value="JavaScript" />
+              JavaScript
+            </label>
+
+            <label>
+              <input type="checkbox" name="skills" value="React" />
+              React
+            </label>
+          </fieldset>
+
+          <p class="error-text" id="error-message"></p>
+
+          <button type="submit" class="btn">Generate Card</button>
+        </fieldset>
+      </form>
+    </section>
+
+    <section class="preview-section">
+      <h2 class="preview-heading">Live Preview</h2>
+
+      <div class="card">
+        <div class="avatar" id="avatar"></div>
+
+        <h2 class="card-title" id="profile-name">Your Name</h2>
+        <p class="job-text" id="profile-title">Job Title</p>
+        <p class="bio-text" id="profile-bio">Bio will appear here...</p>
+
+        <div class="skills" id="skills-container"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
